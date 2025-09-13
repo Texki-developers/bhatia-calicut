@@ -5,6 +5,7 @@ export default function Banner() {
   return (
     <div
       className="flex justify-center w-[100%] min-h-[70vh] md:min-h-[80vh]"
+      id="banner"
       style={{
         backgroundImage: `
           linear-gradient(

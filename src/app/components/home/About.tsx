@@ -3,7 +3,7 @@ import AboutCard from "../UI/AboutCard";
 
 export default function About() {
   return (
-    <div className="flex justify-center w-[100%]">
+    <div className="flex justify-center w-[100%] scroll-mt-30" id="about">
       <div className="common-x-spacing flex flex-col items-center gap-[2rem] md:gap-[4rem]">
         <div className="flex flex-col items-center justify-center gap-[1rem] text-center">
           <h2 className="heading text-dark font-[700]">

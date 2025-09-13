@@ -41,6 +41,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: var(--background);
   color: var(--foreground);
@@ -79,7 +82,7 @@ body {
   }
 
   .btn-solid {
-    @apply bg-primary-400 cursor-pointer text-white border-2 border-primary-400 px-4 xl:px-8 py-2 xl:py-3 text-sm xl:text-base rounded-lg hover:bg-primary-300 hover:border-primary-300;
+    @apply bg-primary-400 cursor-pointer text-white border-2 border-primary-400 px-4 xl:px-8 py-2 xl:py-3 text-sm xl:text-base rounded-full hover:bg-primary-300 hover:border-primary-300 font-[600];
   }
 
   .btn-outlined {
