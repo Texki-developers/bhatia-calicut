@@ -7,8 +7,10 @@ export default function AboutCard() {
       <div className="aspect-square bg-primary-50 p-[0.5rem] rounded-full">
         <EducateIcon className="text-primary-500" width={30} height={30} />
       </div>
-      <h6 className="font-semibold text-center">Educate and Empower</h6>
-      <p className="body-text text-gray font-[500] text-center">
+      <h6 className="body-text font-semibold text-center">
+        Educate and Empower
+      </h6>
+      <p className="caption text-gray font-[500] text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nisi!
       </p>
     </div>
