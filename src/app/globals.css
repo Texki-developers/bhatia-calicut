@@ -1,26 +1,96 @@
 @import "tailwindcss";
 
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ededed;
+  --foreground: #ededed;
+  --primary-50: #98ccf2;
+  --primary-100: #86c3f0;
+  --primary-300: #61b1eb;
+  --primary-400: #1c8ddf;
+  --primary-500: #166dad;
+  --primary-600: #0f4e7b;
+  --primary-700: #092e49;
+  --primary-800: #030f18;
+  --dark: #1b2231;
+  --gray: #606c7c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary-50: #98ccf2;
+  --color-primary-100: #86c3f0;
+  --color-primary-300: #61b1eb;
+  --color-primary-400: #1c8ddf;
+  --color-primary-500: #166dad;
+  --color-primary-600: #0f4e7b;
+  --color-primary-700: #092e49;
+  --color-primary-800: #030f18;
+  --color-dark: var(--dark);
+  --color-gray: var(--gray);
+
+  --font-sans: var(--font-montserrat);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffff;
+    --foreground: #ffff;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Typography Utilities */
+
+@layer utilities {
+  /* Main Heading (Hero / H1) */
+  .heading-main {
+    @apply font-sans font-bold text-4xl md:text-6xl leading-tight tracking-tight;
+  }
+
+  /* Heading (H2) */
+  .heading {
+    @apply font-sans font-semibold text-2xl md:text-4xl leading-snug;
+  }
+
+  /* Subheading (H3 / section titles) */
+  .subheading {
+    @apply font-sans font-medium text-xl md:text-2xl text-gray-700 leading-relaxed;
+  }
+
+  /* Body Text */
+  .body-text {
+    @apply font-sans text-base md:text-lg text-gray-600 leading-normal;
+  }
+
+  /* Small / Caption */
+  .caption {
+    @apply font-sans text-sm md:text-base text-gray-500;
+  }
+
+  .common-x-spacing {
+    @apply px-4 md:px-5 lg:px-8 2xl:px-32;
+  }
+
+  .btn-solid {
+    @apply bg-primary-400 cursor-pointer text-white border-2 border-primary-400 px-4 xl:px-8 py-2 xl:py-3 text-sm xl:text-base rounded-lg hover:bg-primary-300 hover:border-primary-300;
+  }
+
+  .btn-outlined {
+    @apply bg-transparent cursor-pointer text-primary-300 border-2 border-primary-300 px-4 xl:px-8 py-2 xl:py-3 text-sm xl:text-base rounded-lg hover:bg-primary-300 hover:text-white;
+  }
+
+  .btn-normal {
+    @apply border-none cursor-pointer rounded-none p-0 m-0 border-l border-r border-[#D0D5DD];
+  }
+
+  .btn-active {
+    @apply bg-[#F9FAFB] rounded-none p-0 m-0 border-l border-r border-[#D0D5DD];
+  }
 }
