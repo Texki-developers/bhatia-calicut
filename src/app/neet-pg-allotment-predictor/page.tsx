@@ -236,8 +236,8 @@ const RegistrationForm: FC<RegistrationFormProps> = ({ onRegister, onPreFormSucc
   };
 
   return (
-    <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-lg mt-[10rem]
-    md:mt-[3rem]">
+    <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-lg mt-[2rem]
+    md:mt-[2rem]">
       <div className="text-center mb-6">
         <DbmciIcon />
         <h1 className="text-2xl font-bold text-gray-800 mt-4">
@@ -805,8 +805,8 @@ const NeetPgPredictorPage: FC = () => {
     }
   };
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4 pt-[14rem]
-    md:pt-[8rem]">
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4 pt-[10rem]
+    md:pt-[4rem]">
       {user ? (
         <AnalysisDashboard user={user} onStartOver={handleStartOver} />
       ) : (
