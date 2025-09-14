@@ -236,7 +236,8 @@ const RegistrationForm: FC<RegistrationFormProps> = ({ onRegister, onPreFormSucc
   };
 
   return (
-    <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-lg">
+    <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-lg mt-[10rem]
+    md:mt-[3rem]">
       <div className="text-center mb-6">
         <DbmciIcon />
         <h1 className="text-2xl font-bold text-gray-800 mt-4">
@@ -329,7 +330,7 @@ const RegistrationForm: FC<RegistrationFormProps> = ({ onRegister, onPreFormSucc
 
 // --- CORE ANALYSIS & DISPLAY COMPONENTS ---
 const MarketingBanner: FC = () => (
-  <div className="bg-gradient-to-r from-[#2691e4] to-[#263a7e] text-white p-6 rounded-xl shadow-lg my-8 w-full">
+  <div className="bg-gradient-to-r from-[#2691e4] to-[#263a7e] text-white p-6 rounded-xl shadow-lg my-8 w-full ">
     <h3 className="text-2xl font-bold text-center mb-4 text-[#ffcb05]">
       DBMCI Calicut – Preferred Choice for NEET PG
     </h3>
@@ -804,7 +805,8 @@ const NeetPgPredictorPage: FC = () => {
     }
   };
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4">
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center p-4 pt-[14rem]
+    md:pt-[8rem]">
       {user ? (
         <AnalysisDashboard user={user} onStartOver={handleStartOver} />
       ) : (
