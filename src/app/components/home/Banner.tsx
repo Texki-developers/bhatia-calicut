@@ -11,7 +11,7 @@ export default function Banner() {
   };
   return (
     <div
-      className="flex justify-center w-[100%] min-h-[70vh] md:min-h-[80vh]"
+      className="flex justify-center w-[100%] min-h-[70vh] md:min-h-[80vh] pt-[7rem] lg:pt-[4rem]"
       id="banner"
       style={{
         backgroundImage: `

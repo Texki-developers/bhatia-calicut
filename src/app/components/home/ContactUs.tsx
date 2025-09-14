@@ -33,13 +33,13 @@ const ContactFormPage: React.FC = () => {
   };
 
   return (
-    <div className="flex">
+    <div className="flex flex-col lg:flex-row">
       {/* Left Section - Blue with Contact Info */}
-      <div className="w-1/2 bg-blue-500 relative overflow-hidden">
+      <div className="w-full lg:w-1/2 bg-blue-500 relative overflow-hidden">
         {/* Stethoscope background image effect */}
         <div className="absolute inset-0">
           <div className="absolute right-0 top-0 w-full h-full opacity-20">
-            <div className="absolute right-32 top-1/2 -translate-y-1/2 w-80 h-80">
+            <div className="hidden md:block right-8 lg:right-32 top-1/2 -translate-y-1/2 w-40 h-40 lg:w-80 lg:h-80 absolute">
               {/* Simple circular shapes to mimic stethoscope */}
               <div className="absolute top-0 right-0 w-32 h-32 border-4 border-white/30 rounded-full"></div>
               <div className="absolute bottom-20 left-10 w-24 h-24 border-4 border-white/30 rounded-full"></div>
@@ -48,8 +48,8 @@ const ContactFormPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative z-10 p-16 text-white h-full flex flex-col">
-          <h1 className="text-5xl font-bold mb-16">Contact Us</h1>
+        <div className="relative z-10 p-8 md:p-12 lg:p-16 text-white h-full flex flex-col">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 md:mb-12 lg:mb-16">Contact Us</h1>
           
           <div className="space-y-8">
             <div>
@@ -80,7 +80,7 @@ const ContactFormPage: React.FC = () => {
       </div>
 
       {/* Right Section - White with Form */}
-      <div className="w-1/2 bg-[#F7FAFC] p-16 flex items-center">
+      <div className="w-full lg:w-1/2 bg-[#F7FAFC] p-6 md:p-10 lg:p-16 flex items-center">
         <div className="w-full max-w-sm mx-auto">
           <div className="space-y-6">
             <div >
