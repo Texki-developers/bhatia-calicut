@@ -23,7 +23,7 @@
 
 .banner {
   flex: 1;
-  background: linear-gradient(90deg, #1e3a8a, #1e40af);
+  background: linear-gradient(90deg, #61b1eb, #61b1eb);
   color: white;
   padding: 12px 15px;
   display: flex;
@@ -92,7 +92,7 @@
   
   .highlight {
     font-weight: 700;
-    color: #fbbf24;
+    color: #1e00ff;
     text-shadow: 0 0 5px rgba(251, 191, 36, 0.5);
     white-space: nowrap;
   }
@@ -104,7 +104,7 @@
   
   .cta {
     font-weight: 700;
-    color: #93c5fd;
+    color: #093567;
     text-decoration: underline;
     white-space: nowrap;
     transition: all 0.3s ease;
