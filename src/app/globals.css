@@ -67,6 +67,7 @@ body {
     @apply font-sans font-medium text-xl md:text-2xl text-gray-700 leading-relaxed;
   }
 
+
   /* Body Text */
   .body-text {
     @apply font-sans text-base md:text-lg leading-normal;

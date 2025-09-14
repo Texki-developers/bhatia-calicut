@@ -1,6 +1,8 @@
 import Banner from "./components/home/Banner";
 import About from "./components/home/About";
 import FacultiesWrapper from "./components/home/FacultiesWrapper";
+import { ProgramsCarousel } from "./components/programs";
+import ContactFormPage from "./components/home/ContactUs";
 
 export default function Home() {
   return (
@@ -8,7 +10,9 @@ export default function Home() {
       <div className="flex flex-col gap-[3rem] md:gap-[5rem]">
         <Banner />
         <About />
+        <ProgramsCarousel />
         <FacultiesWrapper />
+        <ContactFormPage />
       </div>
     </div>
   );
