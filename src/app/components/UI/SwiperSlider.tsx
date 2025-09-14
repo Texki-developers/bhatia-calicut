@@ -14,7 +14,12 @@ type SwiperSliderProps<T> = {
   autoplay?: boolean;
   spaceBetween?: number;
   slidesPerView?: number;
-  breakpoints?: any;
+  breakpoints?: {
+    [width: number]: {
+      slidesPerView?: number;
+      spaceBetween?: number;
+    };
+  };
 };
 
 export default function SwiperSlider<T>({
@@ -26,7 +31,7 @@ export default function SwiperSlider<T>({
   slidesPerView,
   breakpoints,
 }: SwiperSliderProps<T>) {
-  const [modules, setModules] = useState<any[]>([]);
+  const [modules, setModules] = useState<Array<typeof Autoplay>>([]);
 
   useEffect(() => {
     if (autoplay) {

@@ -36,7 +36,7 @@ interface ApiDataItem {
   Category: string;
   "Last Rank (Rounds 1-3)": string;
   "Last Rank (Stray Vacancy)": string;
-  [key: string]: any; // To allow for other potential properties
+  [key: string]: string | number | undefined; // Allow additional string/number properties
 }
 
 interface AnalysisResult {
@@ -488,7 +488,7 @@ const AnalysisDashboard: FC<AnalysisDashboardProps> = ({
         throw new Error(json.error || "Invalid data structure from API.");
       }
       setApiData(json.data);
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
       setError(
         "Server temporarily down. The DBMCI Calicut tech team is already aware—please try again later."
@@ -519,7 +519,7 @@ const AnalysisDashboard: FC<AnalysisDashboardProps> = ({
       return { tier: "No Allotment Likely", order: 1 };
     };
 
-    let results: AnalysisResult[] = [];
+    const results: AnalysisResult[] = [];
     const relevantData = apiData.filter(
       (item) => item[rankField] && item[rankField] !== "N/A"
     );
@@ -556,7 +556,7 @@ const AnalysisDashboard: FC<AnalysisDashboardProps> = ({
         catLastRank: catLastRankForDisplay,
       };
 
-      if (smRank > 0 && userRank <= smRank) {
+      if (smEntry && smRank > 0 && userRank <= smRank) {
         results.push({
           ...baseResult,
           chance: "High Chance",
