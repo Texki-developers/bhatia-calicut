@@ -40,7 +40,7 @@ export default function Header() {
   return (
     <div
       className={clsx(
-        "w-full fixed top-0 left-0 z-50 transition-colors",
+        "w-full fixed top-0 left-0 z-50 transition-colors pt-[4rem]",
         scrolled &&
           "bg-white/30 backdrop-blur-md border-b border-white/20 shadow-md"
       )}
