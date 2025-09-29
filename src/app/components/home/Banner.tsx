@@ -1,10 +1,17 @@
+'use client';
+
 import React from "react";
 import Button from "../UI/Button";
 
 export default function Banner() {
+  const handleBannerClick = (url: string) => {
+    if (typeof window !== "undefined") {
+      window.location.href = url;
+    }
+  };
   return (
     <div
-      className="flex justify-center w-[100%] min-h-[70vh] md:min-h-[80vh]"
+      className="flex justify-center w-[100%] min-h-[70vh] md:min-h-[80vh] pt-[7rem] lg:pt-[4rem]"
       id="banner"
       style={{
         backgroundImage: `
@@ -28,7 +35,7 @@ export default function Banner() {
           in
         </h1>
         <h2 className="heading">NEET PG/NEXT PREPARATION SINCE 1996</h2>
-        <Button className="btn-solid rounded-full">
+        <Button className="btn-solid rounded-full" onClick={() => handleBannerClick('/neet-pg-allotment-predictor')}>
           Book for free consultation
         </Button>
       </div>
