@@ -1,58 +1,8 @@
 import React from "react";
 import SwiperSlider from "../UI/SwiperSlider";
 import FacultyCard from "../UI/FacultyCard";
+import cards from './mentors.json'
 
-const cards = [
-  {
-    name: "Dr. Bhatia",
-    subject: "Biology Faculty",
-    description:
-      "Dr. John Doe, MBBS (Calicut Medical College), brings over 10 years of medical experience.",
-    image: "/images/mentors/mentor.jpg",
-  },
-  {
-    name: "Dr. Bhatia",
-    subject: "Biology Faculty",
-    description:
-      "Dr. John Doe, MBBS (Calicut Medical College), brings over 10 years of medical experience.",
-    image: "/images/mentors/mentor.jpg",
-  },
-  {
-    name: "Dr. Bhatia",
-    subject: "Biology Faculty",
-    description:
-      "Dr. John Doe, MBBS (Calicut Medical College), brings over 10 years of medical experience.",
-    image: "/images/mentors/mentor.jpg",
-  },
-  {
-    name: "Dr. Bhatia",
-    subject: "Biology Faculty",
-    description:
-      "Dr. John Doe, MBBS (Calicut Medical College), brings over 10 years of medical experience.",
-    image: "/images/mentors/mentor.jpg",
-  },
-  {
-    name: "Dr. Bhatia",
-    subject: "Biology Faculty",
-    description:
-      "Dr. John Doe, MBBS (Calicut Medical College), brings over 10 years of medical experience.",
-    image: "/images/mentors/mentor.jpg",
-  },
-  {
-    name: "Dr. Bhatia",
-    subject: "Biology Faculty",
-    description:
-      "Dr. John Doe, MBBS (Calicut Medical College), brings over 10 years of medical experience.",
-    image: "/images/mentors/mentor.jpg",
-  },
-  {
-    name: "Dr. Bhatia",
-    subject: "Biology Faculty",
-    description:
-      "Dr. John Doe, MBBS (Calicut Medical College), brings over 10 years of medical experience.",
-    image: "/images/mentors/mentor.jpg",
-  },
-];
 
 export default function Faculties() {
   return (
@@ -71,10 +21,10 @@ export default function Faculties() {
           items={cards}
           renderItem={(card, index) => (
             <FacultyCard
-              key={index}
-              subject={card.subject}
+              key={card.id}
+              subject={card.specialization}
               name={card.name}
-              description={card.description}
+              // description={card.description}
               image={card.image}
             />
           )}

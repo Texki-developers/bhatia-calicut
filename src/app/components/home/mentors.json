@@ -1,0 +1,129 @@
+[
+    {
+      "id": 1,
+      "name": "Dr. Sanjay Aggarwal",
+      "specialization": "ENT",
+      "image": "/images/mentors/Sanjay Agarwal.png"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Ajay Yadav",
+      "specialization": "ANESTHESIA",
+      "image": "/images/mentors/Copy of Dr. Ajay yadav.png"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Ashwani Kumar",
+      "specialization": "ANATOMY",
+      "image": "/images/mentors/ashwani kumar.png"
+    },
+    {
+      "id": 4,
+      "name": "Dr. K. S. Vivekanandan",
+      "specialization": "PSYCHIATRY",
+      "image": "/images/mentors/Vivekanandan.png"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Niha Aggarwal",
+      "specialization": "OPTHALMOLOGY",
+      "image": "/images/mentors/niha.png"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Praveen Kr. Gupta",
+      "specialization": "PATHOLOGY",
+      "image": "/images/mentors/praveen kumar.png"
+    },
+    {
+      "id": 7,
+      "name": "Dr. Rajeev Shetty",
+      "specialization": "PSM",
+      "image": "/images/mentors/rajeev shetty.png"
+    },
+    {
+      "id": 8,
+      "name": "Dr. Saurabh Jindal",
+      "specialization": "DERMATOLOGY",
+      "image": "/images/mentors/saurabh jindal.png"
+    },
+    {
+      "id": 9,
+      "name": "Dr. Thameem Saif",
+      "specialization": "MEDICINE",
+      "image": "/images/mentors/thameem saif.png"
+    },
+    {
+      "id": 10,
+      "name": "Dr. Aditiya Gupta",
+      "specialization": "PEDIATRICS",
+      "image": "/images/mentors/Dr.Aditya Gupta.png"
+    },
+    {
+      "id": 11,
+      "name": "Dr. Ashish Kumar",
+      "specialization": "PHYSIOLOGY",
+      "image": "/images/mentors/Ashish Kumar.png"
+    },
+    {
+      "id": 12,
+      "name": "Dr. Abdul Naseer",
+      "specialization": "MICROBIOLOGY",
+      "image": "/images/mentors/abdul-sir-side.png"
+    },
+    {
+      "id": 13,
+      "name": "Dr. Jai Arora",
+      "specialization": "SURGERY",
+      "image": "/images/mentors/jai arora.png"
+    },
+    {
+      "id": 14,
+      "name": "Dr. Mukesh Bhatia",
+      "specialization": "MEDICINE",
+      "image": "/images/mentors/mukesh bhatia.png"
+    },
+    {
+      "id": 15,
+      "name": "Dr. Rajat Jain",
+      "specialization": "RADIOLOGY",
+      "image": "/images/mentors/Dr. rajat jain .png"
+    },
+    {
+      "id": 16,
+      "name": "Dr. Ramayashree",
+      "specialization": "OBGYN",
+      "image": "/images/mentors/ramyashree.png"
+    },
+    {
+      "id": 17,
+      "name": "Dr. Saurabh Bhatia",
+      "specialization": "PHARMACOLOGY",
+      "image": "/images/mentors/saurabh bhatia.png"
+    },
+    {
+      "id": 18,
+      "name": "Dr. Sushil Vijay",
+      "specialization": "ORTHOPAEDICS",
+      "image": "/images/mentors/sushil vijay.png"
+    },
+    {
+      "id": 19,
+      "name": "Dr. Vishwajeet Singh",
+      "specialization": "FMT",
+      "image": "/images/mentors/Copy of Vishvjeet Singh2.png"
+    },
+    {
+      "id": 20,
+      "name": "Dr. Amit Jain",
+      "specialization": "BIOCHEMISTRY",
+      "image": "/images/mentors/IMAGES (Dr. Amit Jain).png"
+    },
+    {
+      "id": 21,
+      "name": "Rajesh Gubba",
+      "specialization": "MEDICINE",
+      "image": "/images/mentors/dr-Siraj.png"
+    }
+  ]
+  
