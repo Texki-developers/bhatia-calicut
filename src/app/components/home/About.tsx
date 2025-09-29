@@ -1,5 +1,27 @@
 import React from "react";
 import AboutCard from "../UI/AboutCard";
+import { ExpertIcon, ProvenIcon, ResultIcon } from "../utilities/Icons";
+
+const cards = [
+  {
+    title: "Proven Legacy",
+    description:
+      "Over 25 years of experience in shaping top medical professionals across India.",
+    icon: ProvenIcon,
+  },
+  {
+    title: "Expert Mentorship",
+    description:
+      "Learn directly from India’s most trusted faculty who simplify complex concepts and guide you personally.",
+    icon: ExpertIcon,
+  },
+  {
+    title: "Results That Speak",
+    description:
+      "Thousands of successful selections every year reflect our commitment to your success.",
+    icon: ResultIcon,
+  },
+];
 
 export default function About() {
   return (
@@ -10,16 +32,20 @@ export default function About() {
             Why choose Bhatia Calicut?
           </h2>
           <p className="caption text-gray font-[500] max-w-[55rem]">
-            Since 1996, Bhatia Calicut has been a beacon has excellence in NEET
-            PG/NEXT preparation, offering unparalleled mentorship guidance to
-            aspiring medical proffessionals
+            The right guidance makes all the difference. Here’s why thousands of
+            aspirants trust us for their NEET PG journey.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[1rem] md:gap-[2rem]">
-          <AboutCard />
-          <AboutCard />
-          <AboutCard />
+          {cards.map((card, index) => (
+            <AboutCard
+              key={index}
+              title={card.title}
+              description={card.description}
+              Icon={card.icon}
+            />
+          ))}
         </div>
       </div>
     </div>
