@@ -11,14 +11,12 @@ interface ProgramCardProps {
   title: string;
   description: string;
   image: string;
-  category: string;
 }
 
 const ProgramCard: React.FC<ProgramCardProps> = ({
   title,
   description,
   image,
-  category,
 }) => {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02] h-full">
@@ -31,9 +29,6 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute top-4 left-4">
-          <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-            {category}
-          </span>
         </div>
       </div>
       <div className="p-6 flex flex-col h-full">
@@ -57,22 +52,22 @@ const ProgramsCarousel: React.FC = () => {
       id: 1,
       title: 'Live 360°',
       description: 'All Live Classes + Marrow Qbank & Test Series + Digital Workbooks. Includes live classes for all 19 subjects, test & discussion classes, and comprehensive study materials.',
-      image: '/images/programs/programs.jpg',
-      category: 'NEET PG',
+      image: '/images/programs/testanddiscussion_bhatia_programs.jpeg',
+      
     },
     {
       id: 2,
 title: 'Live T&D',
       description: 'Live T&D Classes + Marrow Qbank & Test Series + Digital OneShot Workbook. Perfect for last-mile revision and MCQ practice with recorded sessions and test series.',
-      image: '/images/programs/programs.jpg',
-      category: 'NEET PG',
+      image: '/images/programs/live.jpeg',
+      
     },
     {
       id: 3,
       title: 'Face to Face',
       description: '7-8 months of 100% in-person classes, 4-5 days/week. Includes hardcopy workbooks, test series, mentorship, and digital resources. Residential programs available.',
-      image: '/images/programs/programs.jpg',
-      category: 'NEET PG',
+      image: '/images/programs/facetoface.jpeg',
+      
     },
   ];
 
