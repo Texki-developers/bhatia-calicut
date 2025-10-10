@@ -27,7 +27,7 @@ const Results = () => {
 
             <div className="mt-6 text-center text-gray-600">
               <p className="text-lg md:text-xl">
-                We take pride in our students&apos; outstanding achievements and
+                We take pride in our student&apos;s outstanding achievements and
                 consistent results.
               </p>
             </div>
