@@ -24,7 +24,17 @@ const Results = () => {
                 sizes="(max-width: 768px) 100vw, 1000px"
               />
             </div>
-
+            <div className="w-full rounded-lg overflow-hidden shadow-xl pt-4">
+              <Image
+                src="/images/results/result2.jpg"
+                alt="Bhatia Calicut Results"
+                width={1200}
+                height={480}
+                priority
+                className="w-full h-auto"
+                sizes="(max-width: 768px) 100vw, 1000px"
+              />
+            </div>
             <div className="mt-6 text-center text-gray-600">
               <p className="text-lg md:text-xl">
                 We take pride in our student&apos;s outstanding achievements and
