@@ -11,11 +11,11 @@ export default function Home() {
       <div className="flex flex-col gap-[3rem] md:gap-[5rem]">
         <Banner />
         <About />
-        <Results />
         <ProgramsCarousel />
         <FacultiesWrapper />
+        <Results />
         <ContactFormPage />
-        
+
       </div>
     </div>
   );
