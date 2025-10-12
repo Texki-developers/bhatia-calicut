@@ -18,7 +18,7 @@ export default function FacultyCard({
       style={{
         backgroundImage: `url('${image}')`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "top center",
         backgroundColor: "#86c3f0",
       }}
     >
