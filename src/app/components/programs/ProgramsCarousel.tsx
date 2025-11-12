@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/autoplay';
-import Image from 'next/image';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
+import Image from "next/image";
 
 interface ProgramCardProps {
   title: string;
@@ -28,8 +28,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           className="object-cover transition-transform duration-300 hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute top-4 left-4">
-        </div>
+        <div className="absolute top-4 left-4"></div>
       </div>
       <div className="p-6 flex flex-col h-full">
         <div className="flex-grow">
@@ -50,24 +49,24 @@ const ProgramsCarousel: React.FC = () => {
   const programs = [
     {
       id: 1,
-      title: 'Live 360°',
-      description: 'All Live Classes + Marrow Qbank & Test Series + Digital Workbooks. Includes live classes for all 19 subjects, test & discussion classes, and comprehensive study materials.',
-      image: '/images/programs/testanddiscussion_bhatia_programs.jpeg',
-      
+      title: "Live 360°",
+      description:
+        "Live T&D Classes + Marrow Qbank & Test Series + Digital OneShot Workbook. Perfect for last-mile revision and MCQ practice with recorded sessions and test series.",
+      image: "/images/programs/testanddiscussion_bhatia_programs.jpeg",
     },
     {
       id: 2,
-title: 'Live T&D',
-      description: 'Live T&D Classes + Marrow Qbank & Test Series + Digital OneShot Workbook. Perfect for last-mile revision and MCQ practice with recorded sessions and test series.',
-      image: '/images/programs/live.jpeg',
-      
+      title: "Live T&D",
+      description:
+        "All Live Classes + Marrow Qbank & Test Series + Digital Workbooks. Includes live classes for all 19 subjects, test & discussion classes, and comprehensive study materials.",
+      image: "/images/programs/live.jpeg",
     },
     {
       id: 3,
-      title: 'Face to Face',
-      description: '7-8 months of 100% in-person classes, 4-5 days/week. Includes hardcopy workbooks, test series, mentorship, and digital resources. Residential programs available.',
-      image: '/images/programs/facetoface.jpeg',
-      
+      title: "Face to Face",
+      description:
+        "7-8 months of 100% in-person classes, 4-5 days/week. Includes hardcopy workbooks, test series, mentorship, and digital resources. Residential programs available.",
+      image: "/images/programs/facetoface.jpeg",
     },
   ];
 
@@ -80,8 +79,9 @@ title: 'Live T&D',
             Our Programs
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
-            Since 1996, Bhatia Calicut has been a beacon has excellence in NEET PG/NEXT preparation,
-            offering unparalleled mentorship guidance to aspiring medical proffessionals
+            Since 1996, Bhatia Calicut has been a beacon has excellence in NEET
+            PG/NEXT preparation, offering unparalleled mentorship guidance to
+            aspiring medical proffessionals
           </p>
         </div>
 
@@ -110,7 +110,6 @@ title: 'Live T&D',
                 spaceBetween: 32,
               },
             }}
-
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
@@ -121,7 +120,6 @@ title: 'Live T&D',
           >
             {programs.map((program) => (
               <SwiperSlide key={program.id} className="h-auto mb-[2rem]">
-
                 <ProgramCard {...program} />
               </SwiperSlide>
             ))}
@@ -143,7 +141,7 @@ title: 'Live T&D',
         .programs-swiper .swiper-slide {
           height: auto;
         }
-        
+
         .swiper-pagination-bullet-custom {
           width: 12px;
           height: 12px;
@@ -152,12 +150,12 @@ title: 'Live T&D',
           cursor: pointer;
           transition: all 0.3s ease;
         }
-        
+
         .swiper-pagination-bullet-active-custom {
           background: #3b82f6;
           transform: scale(1.2);
         }
-        
+
         .swiper-button-prev-custom:hover,
         .swiper-button-next-custom:hover {
           transform: translateY(-50%) scale(1.1);
