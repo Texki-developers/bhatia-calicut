@@ -40,19 +40,19 @@ export default function Header() {
   return (
     <div
       className={clsx(
-        "w-full fixed top-0 left-0 z-50 transition-colors pt-[7rem] lg:pt-[4rem]",
+        "w-full fixed top-0 left-0 z-50 transition-colors pt-[1rem]",
         scrolled &&
           "bg-white/30 backdrop-blur-md border-b border-white/20 shadow-md"
       )}
     >
       <div className="common-x-spacing">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/">
             <Image
-              src={scrolled ? "/logo-invert.png" : "/logo.png"}
+              src={scrolled ? "/logo.png" : "/logo.png"}
               alt="Bhatia Calicut Logo"
-              parentClass="aspect-[1.5/1] w-[6rem] h-auto"
+              parentClass="aspect-[4/4] w-[6rem] h-auto "
             />
           </Link>
 
